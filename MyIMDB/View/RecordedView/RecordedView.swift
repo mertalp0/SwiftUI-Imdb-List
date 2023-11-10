@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct RecordedView: View {
+    let service = WebService()
+ 
     var body: some View {
-        Text("Kaydedileler")
+        Button(action: {
+            Task{
+                print("sgfdh")
+                let ass = try  await service.fetchMoviesDetail(imdbId:"sdgf")
+                print("sgfdh")
+                print(ass.imdbRating)
+                
+            }
+                         
+                      }) {
+                          Image(systemName: "magnifyingglass")
+                              .foregroundColor(.blue)
+                              .padding(8)
+                      }
+                      .padding(.top, 10)
+                  }
+
     }
-}
+
 
 #Preview {
     RecordedView()

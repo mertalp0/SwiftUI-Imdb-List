@@ -9,12 +9,7 @@ import Foundation
 
 // MARK: - MovieDetail
 struct MovieDetail: Codable {
-    let success: Bool
-    let result: MovieDetailResult
-}
-
-// MARK: - Result
-struct MovieDetailResult: Codable {
+    var id = UUID()
     let title, year, rated, released: String
     let runtime, genre, director, writer: String
     let actors, plot, language, country: String

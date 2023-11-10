@@ -12,7 +12,7 @@ struct Constants {
     struct Urls {
         static let baseUrl : String = "https://api.collectapi.com/imdb"
         static let movieUrl = "\(baseUrl)/imdbSearchByName?query="
-        static let movieDetailUrl = "\(baseUrl)/imdbSearchById?movieId=tt1375666"
+        static let movieDetailUrl = "\(baseUrl)/imdbSearchById?movieId=tt5295894"
 
     }
     
