@@ -13,4 +13,5 @@ struct LocalMovie: Identifiable , Decodable {
     let imdbRating: Double
     let director: String
     let image: String
+    let plot : String
 }

@@ -13,30 +13,39 @@ struct ImdbView: View {
         self.localMovieListViewModal = LocalMovieListViewModal()
     }
     var body: some View {
-        List {
-            Section(header: Text("IMDB")) {
-                ForEach(localMovieListViewModal.movieList, id: \.id) { movie in
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Image(movie.image)
-                                .resizable()  // Resizin yapılabilir olduğunu belirtiyoruz
-                              //  .aspectRatio(contentMode: .fit)  // Resmin oranını korumak için .fit kullanıyoruz
-                                .frame(width: 50, height: 50)  // 20x20 boyutunda bir çerçeve belirtiyoruz
+        NavigationStack{
+            List {
+                Section(header: Text("IMDB")) {
+                    ForEach(localMovieListViewModal.movieList, id: \.id) { movie in
+                        NavigationLink {
+                           // UPDATE 
+                            ImdbDetailView(movie:movie)
+                            
+                        } label: {
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    Image(movie.image)
+                                        .resizable()  // Resizin yapılabilir olduğunu belirtiyoruz
+                                      //  .aspectRatio(contentMode: .fit)  // Resmin oranını korumak için .fit kullanıyoruz
+                                        .frame(width: 50, height: 50)  
 
-                            Text(movie.title)
-                                .cornerRadius(5)
-                        
-                                .font(.footnote)
-                                .fontWeight(.bold)
-                                .padding()
-                                .foregroundColor(.blue)
-                            Spacer()
-                            Text(String(movie.imdbRating))
-                                .font(.footnote)
-                                .fontWeight(.bold)
-                                .padding()
-                                .foregroundColor(.red)
+                                    Text(movie.title)
+                                        .cornerRadius(5)
+                                
+                                        .font(.footnote)
+                                        .fontWeight(.bold)
+                                        .padding()
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                    Text(String(movie.imdbRating))
+                                        .font(.footnote)
+                                        .fontWeight(.bold)
+                                        .padding()
+                                        .foregroundColor(.red)
+                                }
+                            }
                         }
+
                     }
                 }
             }

@@ -8,15 +8,15 @@
 import SwiftUI
 import Kingfisher
 struct SearchViewDetail: View {
-    @ObservedObject var a : MovieDetailListViewModal
+    @ObservedObject var moveiDetailListViewModal : MovieDetailListViewModal
     let imdbId : String
     init(imdbId: String)   {
         self.imdbId = imdbId
-        self.a = MovieDetailListViewModal()
+        self.moveiDetailListViewModal = MovieDetailListViewModal()
     }
     var body: some View {
         VStack {
-            if let movieDetail = a.movieDetail.first {
+            if let movieDetail = moveiDetailListViewModal.movieDetail.first {
                 ScrollView {
                     KFImage(URL(string: movieDetail.poster))
                         .resizable()
@@ -77,24 +77,17 @@ struct SearchViewDetail: View {
                             .fontWeight(.bold)
                             .padding()
                             .foregroundColor(.white)
-                        
-                        
                         Spacer()
                     }
-                   
-                    
-                    
-                    
-        
                 }
                 
             } else {
-                ProgressView("Loading...")
+                ProgressView("Loading...").foregroundColor(.red).frame(width: UIScreen.main.bounds.width ,height: UIScreen.main.bounds.height)
             }
         }
         .background(.black)
         .task {
-            await a.downloadMovieDetail(imdbId: imdbId)
+            await moveiDetailListViewModal.downloadMovieDetail(imdbId: imdbId)
         }
     }
 }

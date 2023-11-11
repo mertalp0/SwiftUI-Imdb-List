@@ -9,8 +9,8 @@ import Foundation
 
 
 class WebService {
-    func fetchMoviesDetail(imdbId : String = "tt1375666") async throws -> MovieDetail {
-        guard let url = URL(string:Constants.Urls.movieDetailUrl)else {
+    func fetchMoviesDetail(imdbId : String) async throws -> MovieDetail {
+        guard let url = URL(string:Constants.Urls.movieDetailUrl+imdbId)else {
             //print("Geçersiz URL")
             throw NetworkError.invalidUrl
         }
@@ -25,7 +25,7 @@ class WebService {
                 if httpResponse.statusCode == 200 {
                     do{ let result = try JSONDecoder().decode(MovieDetailResponse.self, from: data)
                         let movieDetail = result.result
-                        print("movie detail :  \(movieDetail)")
+                        print("movie detail : \(movieDetail)")
                         return movieDetail
                     }catch {
                        // print("Hata: \(error)")

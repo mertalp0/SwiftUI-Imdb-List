@@ -23,12 +23,7 @@ struct TabBarView: View {
                     Text("Search")
                 }
                 .tag(1)
-            RecordedView()
-                .tabItem {
-                    Image(systemName: "heart.fill")
-                    Text("Like")
-                }
-                .tag(2)
+           
         }
         .accentColor(.blue) // Seçilen sekmenin renk
         .onAppear {

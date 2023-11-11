@@ -16,7 +16,7 @@ struct Movie: Codable {
     enum CodingKeys: String, CodingKey {
         case title = "Title"
         case year = "Year"
-        case imdbID
+        case imdbID 
         case type = "Type"
         case poster = "Poster"
     }

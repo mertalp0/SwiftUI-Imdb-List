@@ -51,7 +51,11 @@ struct LocalMovieViewModal {
     }
     var image  : String {
         movie.image
-    }}
+    }
+    var plot : String {
+        movie.plot
+    }
+}
 
 
 

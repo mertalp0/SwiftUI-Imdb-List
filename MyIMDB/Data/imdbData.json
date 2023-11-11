@@ -1,22 +1,81 @@
 [{
-    "id" : "1",
+    "id": "1",
     "title": "The Shawshank Redemption",
     "year": 1994,
     "imdbRating": 9.3,
     "director": "Frank Darabont",
-    "image": "TheShawshankRedemption"
-  },{
-      "id" : "2",
-      "title": "The Shawshank Redemption",
-      "year": 1994,
-      "imdbRating": 9.3,
-      "director": "Frank Darabont",
-      "image": "TheShawshankRedemption"
-    },{
-        "id" : "3",
-        "title": "The Shawshank Redemption",
-        "year": 1994,
-        "imdbRating": 9.3,
-        "director": "Frank Darabont",
-        "image": "TheShawshankRedemption"
-      }]
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "2",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "3",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "4",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "5",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "5",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "5",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "5",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "5",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+},{
+    "id": "5",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "imdbRating": 9.3,
+    "director": "Frank Darabont",
+    "image": "TheShawshankRedemption",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+}]
